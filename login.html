@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Expense Track Website - Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ddb4b4;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            color: #000000;
+        }
+
+        .header {
+            background-color: silver;
+        }
+
+        .container {
+            width: 300px;
+            height: auto;
+            background-color: #ddb4b4;
+            margin: 0 auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .form-login {
+            width: 100%;
+            background-color: #ddb4b4;
+            padding: 10px;
+            text-align: center;
+            display: block;
+        }
+
+        .log-in {
+            list-style-type: none;
+            font-size: 20px;
+        }
+
+        .input-fields {
+            width: 100%;
+            background-color: azure;
+            margin: 10px 0;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .submit-button {
+            width: auto;
+            height: auto;
+            background-color: aqua;
+            margin: 10px 0;
+            padding: 5px;
+            text-align: center;
+            border: none;
+        }
+
+        .check-box {
+            margin: 10px 0;
+        }
+
+        .forget-group {
+            margin: 10px 0;
+            background-color: bisque;
+            padding: 5px;
+        }
+
+        .forget-group a {
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <form action="login_process.php">
+            <div class="container">
+                <div class="form-login">
+                    <h2 class="log-in">Login</h2>
+                    <div class="input-fields">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter Username">
+                    </div>
+                    <div class="input-fields">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password">
+                    </div>
+                    <div class="submit-button">
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" id="remember-me" name="remember-me" value="remember">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <div class="forget-group">
+                        <a href="forgot_password.html">Forgotten password</a>
+                        <a href="register.html">Register</a>
+                        <a href="sign_up.html">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

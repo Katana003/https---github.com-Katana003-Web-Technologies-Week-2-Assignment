@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        .nav a {
+            padding: 14px 20px;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .welcome {
+            text-align: center;
+        }
+
+        .overview {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .overview div {
+            width: 30%;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .overview div h2 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .overview div p {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome to Expense Tracker</h1>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="budget.html">Budget</a>
+        <a href="report.html">Report</a>
+        <a href="categories.html">Categories</a>
+        <a href="login.html">Login</a>
+        <a href="expenses.html">Expenses</a>
+        <a href="Regestration.html">Regestration</a>
+        
+    </div>
+
+    <div class="container">
+        <div class="welcome">
+            <h2>Track Your Expenses Easily</h2>
+            <p>Manage your budgets, view detailed reports, and keep track of your spending habits.</p>
+        </div>
+
+        <div class="overview">
+            <div>
+                <h2>Total Budget</h2>
+                <p>ksh 5000.00</p>
+            </div>
+            <div>
+                <h2>Total Expenses</h2>
+                <p> ksh.3,700</p>
+            </div>
+            <div>
+                <h2>Remaining Balance</h2>
+                <p> ksh.1,300.00</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

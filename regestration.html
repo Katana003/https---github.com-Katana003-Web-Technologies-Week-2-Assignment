@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Expense Track Website - Registration</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-group">
+            <form action="submit_form.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g., Katana">
+                <br><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="e.g., katana@gmail.com">
+                <br><br>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="e.g., Katana">
+                <br><br>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="07 48746 864">
+                <br><br>
+
+                <p>Write Your Message Here</p>
+                <textarea name="message" id="message" cols="50" rows="5" placeholder="Write your message here"></textarea>
+                <br><br>
+
+                <p>Books that I like to read often</p>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <input type="checkbox" id="book1" name="books" value="The River and The Source">
+                        <label for="book1">The River and The Source</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="book2" name="books" value="Rich Dad Poor Dad">
+                        <label for="book2">Rich Dad Poor Dad</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="book3" name="books" value="The Blossoms of The Savannah">
+                        <label for="book3">The Blossoms of The Savannah</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="book4" name="books" value="A dolls House">
+                        <label for="book4">A dolls House</label>
+                    </li>
+                </ul>
+
+                <p>Gender</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="rather-not-say" name="gender" value="rather not say">
+                <label for="rather-not-say">Rather not say</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

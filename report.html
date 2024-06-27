@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .summary {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .summary div {
+            width: 30%;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .summary div h2 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .summary div p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .chart {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Expense Report</h1>
+        <div class="summary">
+            <div>
+                <h2>Total Expenses</h2>
+                <p>ksh.3,700.00</p>
+            </div>
+            <div>
+                <h2>Highest Expense</h2>
+                <p>ksh 2500.00 - University Fee</p>
+            </div>
+            <div>
+                <h2>Lowest Expense</h2>
+                <p>ksh 100.00 - Transport</p>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>2022-10-10</td>
+                    <td>Food</td>
+                    <td>Ksh 100</td>
+                    <td>Breakfast</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2022-10-15</td>
+                    <td>Fees</td>
+                    <td>Ksh 2500</td>
+                    <td>University Fees</td>
+                </tr>
+                <tr>
+                    <td>2022-10-20</td>
+                    <td>Transport</td>
+                    <td>Ksh 100</td>
+                    <td>Bus Fare</td>
+                </tr>
+                <tr>
+                    <td>2022-10-25</td>
+                    <td>Shopping</td>
+                    <td>Ksh 1000</td>
+                    <td>Shopping</td>
+                  </tr>
+                
+            </tbody>
+        </table>
+
+        <div class="chart" id="expense-chart">
+
+        </div>
+    </div>
